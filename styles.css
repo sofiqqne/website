@@ -1,0 +1,83 @@
+*{margin:0; padding:0; font-size:1em; box-sizing:border-box;}
+@keyframes degradeFond {
+	0% {background-position:0 50%;}
+	50% {background-position:50% 50%;}
+	100% {background-position:0 50%;} 
+}
+
+
+
+body {
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color:black;
+  }
+
+  h3{
+    position:relative ;
+    top:900%;
+    width:100%;
+    font-family: "Blenda Script"; 
+    font-weight: normal;
+    font-size:2em;
+    text-align:center;
+    transform:translate ;
+    color:#fff;
+    transform:translateY (-50%);
+
+
+  }
+
+
+  ul {
+    float: left;
+    left: 50%;
+    position: relative;
+    padding-top: 15px;
+    margin-left: -60px;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+  }
+  
+  ul li {
+    margin-left: 20px;
+    float: left;
+    list-style-type: none;
+    position: relative;
+    left: -50%;
+  }
+  
+  ul li a {transition:background-color 4s ease; background:linear-gradient(70deg, rgb(255, 94, 0), pink, white); 
+    background-size:auto; 
+    background-size:500% 250%; 
+    animation:degradeFond 2s ease infinite;
+    text-align: center;
+    padding-top: 10px;
+    display: inline-block;
+    height: 30px;
+    width: 100px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  #menu ul li a:hover {
+    color: white;
+    background-color: red;
+  }
+  #print {
+    display: block;
+    width: 1000px;
+    padding: 10%;
+    margin: auto;
+    color:#fff;
+    font-family: "Blenda Script"; 
+    font-weight: normal;
+    text-align: center;
+    font-size: 25px;
+}
+
+p {
+
+  color:white
+}
